@@ -1,0 +1,214 @@
+<html>
+  <head>
+    <title>Cafe Site</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Borel&family=Marck+Script&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="shortcut icon" href="cafelogo.jpg" type="image/x-icon" />
+  </head>
+  <body>
+    <div class="header">
+      <h1>My Adda</h1>
+    </div>
+
+    <div class="sandwich">
+      <table border="2">
+        <tr>
+          <th colspan="3">Sandwich</th>
+        </tr>
+
+        <tr>
+          <td>Veg Grilled Sandwich</td>
+          <td>60/-</td>
+          <td class="checkbox">
+            <input
+              type="checkbox"
+              data-name="Veg Grilled Sandwich"
+              data-price="60"
+            />
+          </td>
+        </tr>
+
+        <tr>
+          <td>Coleslaw Sandwich</td>
+          <td>50/-</td>
+          <td class="checkbox">
+            <input
+              type="checkbox"
+              data-name="Coleslaw Sandwich"
+              data-price="50"
+            />
+          </td>
+        </tr>
+
+        <tr>
+          <td>Veggie cheese Sandwich</td>
+          <td>100/-</td>
+          <td class="checkbox">
+            <input
+              type="checkbox"
+              data-name="Veggie cheese Sandwich"
+              data-price="100"
+              class="input"
+            />
+          </td>
+        </tr>
+
+        <tr>
+          <td>Tandoori paneer Sandwich</td>
+          <td>210/-</td>
+          <td class="checkbox">
+            <input
+              type="checkbox"
+              data-name="Tandoori paneer Sandwich"
+              data-price="210"
+            />
+          </td>
+        </tr>
+
+        <tr>
+          <td>Veg maxican Sandwich</td>
+          <td>100/-</td>
+          <td class="checkbox">
+            <input
+              type="checkbox"
+              data-name="Veg maxican Sandwich"
+              data-price="100"
+            />
+          </td>
+        </tr>
+      </table>
+
+      <img src="Sandwich.jpg" alt="" />
+    </div>
+
+    <div class="pasta">
+      <img src="pasta.jpg" alt="" />
+
+      <table border="2" id="menu">
+        <tr>
+          <th colspan="3">Pasta</th>
+        </tr>
+
+        <tr>
+          <td>White Sauce Pasta</td>
+          <td>150/-</td>
+          <td class="checkbox">
+            <input
+              type="checkbox"
+              data-name="White Sauce Pasta"
+              data-price="150"
+            />
+          </td>
+        </tr>
+
+        <tr>
+          <td>Red Sauce Pasta</td>
+          <td>100/-</td>
+          <td class="checkbox">
+            <input
+              type="checkbox"
+              data-name="Red Sauce Pasta"
+              data-price="100"
+            />
+          </td>
+        </tr>
+
+        <tr>
+          <td>Mix Sauce Pasta</td>
+          <td>200/-</td>
+          <td class="checkbox">
+            <input
+              type="checkbox"
+              data-name="Mix Sauce Pasta"
+              data-price="200"
+            />
+          </td>
+        </tr>
+        <tr>
+          <td>Macaroni Pasta</td>
+          <td>200/-</td>
+          <td class="checkbox">
+            <input
+              type="checkbox"
+              data-name="macaroni Pasta"
+              data-price="200"
+            />
+          </td>
+        </tr>
+      </table>
+    </div>
+
+    <div class="bevrages">
+      <table border="2">
+        <tr>
+          <th colspan="3">Bevrages</th>
+        </tr>
+
+        <tr>
+          <td>Cold Coffee</td>
+          <td>190/-</td>
+          <td class="checkbox">
+            <input
+              id="check"
+              type="checkbox"
+              data-name="Cold Coffee"
+              data-price="190"
+            />
+          </td>
+        </tr>
+
+        <tr>
+          <td>Hot Coffee</td>
+          <td>100/-</td>
+          <td class="checkbox">
+            <input type="checkbox" data-name="Hot Coffee" data-price="100" />
+          </td>
+        </tr>
+
+        <tr>
+          <td>Oreo Shake</td>
+          <td>140/-</td>
+          <td class="checkbox">
+            <input type="checkbox" data-name="Oreo Shake" data-price="140" />
+          </td>
+        </tr>
+
+        <tr>
+          <td>Strawberry Shake</td>
+          <td>150/-</td>
+          <td class="checkbox">
+            <input
+              type="checkbox"
+              data-name="Strawberry Shake"
+              data-price="150"
+            />
+          </td>
+        </tr>
+
+        <tr>
+          <td>Vergin Mojito</td>
+          <td>90/-</td>
+          <td class="checkbox">
+            <input type="checkbox" data-name="Vergin Mojito" data-price="90" />
+          </td>
+        </tr>
+      </table>
+
+      <img src="Oreoshake.jpg" alt="" />
+    </div>
+
+    <div>
+      <button id="btn">place order</button>
+    </div>
+    <!-- <div id="orderplaced">
+      <img src="orderplaced.gif" alt="" />
+    </div> -->
+
+    <script src="app.js"></script>
+  </body>
+</html>

@@ -1,0 +1,141 @@
+* {
+  box-sizing: border-box;
+}
+::-webkit-scrollbar {
+  display: none;
+}
+input[type="checkbox"] {
+  appearance: none;
+  width: 30px;
+  height: 30px;
+  border: 2px solid #000000;
+  border-radius: 50%;
+  outline: none;
+}
+input[type="checkbox"]:checked {
+  background-color: whitesmoke;
+  border-color: #3498db;
+}
+.checkbox {
+  text-align: center;
+  width: 20px;
+}
+body {
+  background-image: url("https://i.pinimg.com/1200x/82/b5/c0/82b5c0870c0afe6302fe1da8b1c46774.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+div {
+  background-color: transparent;
+}
+
+.header {
+  color: whitesmoke;
+  text-align: center;
+  font-size: 50px;
+  font-family: "Borel", cursive;
+  font-family: "Marck Script", cursive;
+}
+.sandwich,
+.pasta,
+.bevrages {
+  display: flex;
+  position: relative;
+}
+.sandwich img {
+  z-index: -1;
+  border-radius: 20px;
+  top: 5%;
+  width: 600px;
+  height: 350px;
+  position: absolute;
+  right: 20px;
+  clip-path: polygon(
+    40% 0%,
+    40% 20%,
+    100% 20%,
+    100% 80%,
+    40% 80%,
+    40% 100%,
+    0% 50%
+  );
+}
+
+.pasta {
+  margin-top: 100px;
+}
+.pasta img {
+  position: absolute;
+  z-index: -1;
+  top: 2%;
+  left: 20px;
+  width: 600px;
+  height: 300px;
+  clip-path: polygon(0% 0%, 75% 0%, 100% 50%, 75% 100%, 0% 100%);
+}
+.bevrages img {
+  position: absolute;
+  z-index: -1;
+  top: 10%;
+  right: 20px;
+  width: 600px;
+  height: 300px;
+  clip-path: polygon(
+    40% 0%,
+    40% 20%,
+    100% 20%,
+    100% 80%,
+    40% 80%,
+    40% 100%,
+    0% 50%
+  );
+}
+table {
+  border-collapse: collapse;
+  margin-top: 20px;
+  margin-left: 20px;
+  font-style: italic;
+  font-size: 30px;
+  width: 45%;
+  border: 1px solid #000000;
+}
+#menu {
+  margin-right: 20px;
+  /* float: right; */
+  margin-left: auto;
+}
+table tr {
+  border-radius: 20px;
+}
+table tr td,
+th {
+  padding: 10px;
+  background-color: transparent;
+}
+.bevrages {
+  margin-top: 100px;
+}
+
+#btn {
+  padding: 10px;
+  margin: 20px;
+  font-size: 1rem;
+  border-radius: 10px;
+  cursor: pointer;
+  font-weight: bolder;
+  outline: none;
+  border: none;
+}
+#btn:hover {
+  background-color: #6c3428;
+  color: whitesmoke;
+}
+
+@media (max-width: 600px) (oriantation: potra) {
+  .sandwich img,
+  .pasta img,
+  .bevrages img {
+    display: none;
+  }
+}
